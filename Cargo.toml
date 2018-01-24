@@ -1,0 +1,18 @@
+[package]
+name = "maskerad_gameobject_model"
+version = "0.1.0"
+authors = ["Maskerad Developers <maskerad-rs.organization@protonmail.com>"]
+description = "A collection of interfaces and structures to implement game objects"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Maskerad-rs/maskerad_gameobject_model"
+readme = "README_CRATE.md"
+keywords = ["gameobject"]
+
+[badges]
+
+appveyor = { repository = "Malkaviel/maskerad-gameobject-model", branch = "master", service = "github" }
+travis-ci = { repository = "Maskerad-rs/Maskerad_gameobject_model", branch = "master" }
+codecov = { repository = "Maskerad-rs/Maskerad_gameobject_model", branch = "master", service = "github" }
+is-it-maintained-issue-resolution = { repository = "Maskerad-rs/maskerad_gameobject_model" }
+is-it-maintained-open-issues = { repository = "Maskerad-rs/maskerad_gameobject_model" }
+maintenance = { status = "actively-developed" }
