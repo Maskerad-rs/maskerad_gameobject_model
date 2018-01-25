@@ -16,3 +16,7 @@ codecov = { repository = "Maskerad-rs/Maskerad_gameobject_model", branch = "mast
 is-it-maintained-issue-resolution = { repository = "Maskerad-rs/maskerad_gameobject_model" }
 is-it-maintained-open-issues = { repository = "Maskerad-rs/maskerad_gameobject_model" }
 maintenance = { status = "actively-developed" }
+
+[dependencies]
+
+cgmath = "~0.16.0"
