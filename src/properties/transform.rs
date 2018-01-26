@@ -26,11 +26,11 @@ impl Default for Transform {
 }
 
 impl Transform {
-    pub fn new(position: Vector3<f64>, rotation: Vector3<f64>, scale: Vector3<f64>) -> Self {
+    pub fn new(position: (f64, f64, f64), rotation: (f64, f64, f64), scale: (f64, f64, f64)) -> Self {
         Transform {
-            position,
-            rotation,
-            scale,
+            position: Vector3::from(position),
+            rotation: Vector3::from(rotation),
+            scale: Vector3::from(scale),
         }
     }
 
