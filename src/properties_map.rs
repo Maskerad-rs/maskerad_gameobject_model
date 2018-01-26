@@ -30,4 +30,12 @@ impl PropertiesMap {
     pub fn get_transform_of(&self, gameobject_id: &Path) -> Option<&Transform> {
         self.transforms.get(gameobject_id)
     }
+
+    pub fn add_mesh(&mut self, gameobject_id: &Path, mesh: Mesh) {
+        self.meshes.insert(gameobject_id.to_path_buf(), mesh);
+    }
+
+    pub fn add_transform(&mut self, gameobject_id: &Path, transform: Transform) {
+        self.transforms.insert(gameobject_id.to_path_buf(), transform);
+    }
 }
