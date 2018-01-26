@@ -10,5 +10,5 @@ use std::path::PathBuf;
 use properties::transform::Transform;
 
 pub struct PropertiesMap {
-    positions: HashMap<PathBuf, Transform>,
+    transforms: HashMap<PathBuf, Transform>,
 }
