@@ -20,3 +20,4 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 
 cgmath = "~0.16.0"
+gltf = "~0.9.0"

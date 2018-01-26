@@ -6,6 +6,7 @@
 // copied, modified, or distributed except according to those terms.
 
 extern crate cgmath;
+extern crate gltf;
 
 pub mod properties_map;
 pub mod gameobject;

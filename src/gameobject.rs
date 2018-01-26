@@ -6,6 +6,7 @@
 // copied, modified, or distributed except according to those terms.
 
 use std::path::{PathBuf, Path};
+
 pub struct GameObject {
     id: PathBuf,
 }

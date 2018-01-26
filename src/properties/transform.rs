@@ -10,9 +10,9 @@ use cgmath::Vector3;
 
 #[derive(Debug)]
 pub struct Transform {
-    position: Vector3<f32>,
-    rotation: Vector3<f32>, //TODO: Probably quaternion
-    scale: Vector3<f32>,
+    position: Vector3<f64>,
+    rotation: Vector3<f64>, //TODO: Probably quaternion
+    scale: Vector3<f64>,
 }
 
 impl Default for Transform {
@@ -26,7 +26,7 @@ impl Default for Transform {
 }
 
 impl Transform {
-    pub fn new(position: Vector3<f32>, rotation: Vector3<f32>, scale: Vector3<f32>) -> Self {
+    pub fn new(position: Vector3<f64>, rotation: Vector3<f64>, scale: Vector3<f64>) -> Self {
         Transform {
             position,
             rotation,
@@ -34,27 +34,27 @@ impl Transform {
         }
     }
 
-    pub fn position(&self) -> &Vector3<f32> {
+    pub fn position(&self) -> &Vector3<f64> {
         &self.position
     }
 
-    pub fn rotation(&self) -> &Vector3<f32> {
+    pub fn rotation(&self) -> &Vector3<f64> {
         &self.rotation
     }
 
-    pub fn scale(&self) -> &Vector3<f32> {
+    pub fn scale(&self) -> &Vector3<f64> {
         &self.scale
     }
 
-    pub fn set_position(&mut self, new_pos: (f32, f32, f32)) {
+    pub fn set_position(&mut self, new_pos: (f64, f64, f64)) {
         self.position = Vector3::from(new_pos);
     }
 
-    pub fn set_rotation(&mut self, new_rot: (f32, f32, f32)) {
+    pub fn set_rotation(&mut self, new_rot: (f64, f64, f64)) {
         self.rotation = Vector3::from(new_rot)
     }
 
-    pub fn set_scale(&mut self, new_scale: (f32, f32, f32)) {
+    pub fn set_scale(&mut self, new_scale: (f64, f64, f64)) {
         self.scale = Vector3::from(new_scale)
     }
 }
