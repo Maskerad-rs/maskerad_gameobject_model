@@ -11,7 +11,7 @@ pub struct GameObject {
 }
 
 impl GameObject {
-    fn new(path: &Path) -> Self {
+    pub fn new(path: &Path) -> Self {
         GameObject {
             id: path.to_path_buf(),
         }
