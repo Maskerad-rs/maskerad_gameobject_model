@@ -11,3 +11,15 @@ use gltf::Gltf;
 pub struct Mesh {
     data: Gltf,
 }
+
+impl Mesh {
+    pub fn new(data: Gltf) -> Self {
+        Mesh {
+            data
+        }
+    }
+
+    pub fn data(&self) -> &Gltf {
+        &self.data
+    }
+}
