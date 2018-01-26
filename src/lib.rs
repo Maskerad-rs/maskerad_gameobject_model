@@ -7,9 +7,9 @@
 
 extern crate cgmath;
 
-mod properties_map;
-mod gameobject;
-mod properties;
+pub mod properties_map;
+pub mod gameobject;
+pub mod properties;
 /*
     We can have:
     - static geometry
