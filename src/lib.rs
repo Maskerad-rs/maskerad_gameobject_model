@@ -8,7 +8,6 @@
 extern crate cgmath;
 extern crate gltf;
 
-pub mod properties_map;
 pub mod gameobject;
 pub mod properties;
 /*
