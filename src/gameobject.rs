@@ -5,16 +5,14 @@
 // http://opensource.org/licenses/MIT>, at your option. This file may not be
 // copied, modified, or distributed except according to those terms.
 
-use std::path::{PathBuf, Path};
-
 pub struct GameObject {
-    id: PathBuf,
+    id: String,
 }
 
 impl GameObject {
-    pub fn new(path: &Path) -> Self {
+    pub fn new(id: &str) -> Self {
         GameObject {
-            id: path.to_path_buf(),
+            id: String::from(id),
         }
     }
 }
