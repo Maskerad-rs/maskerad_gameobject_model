@@ -8,6 +8,7 @@
 use gltf::Gltf;
 
 //TODO: I don't know how to use Gltf data, WIP.
+#[derive(Debug)]
 pub struct Mesh {
     data: Gltf,
 }
